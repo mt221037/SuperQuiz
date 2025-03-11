@@ -15,7 +15,7 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/question-list/question-list.page').then( m => m.QuestionListPage)
   },
   {
-    path: 'question',
+    path: 'question/:id',
     loadComponent: () => import('./pages/question/question.page').then( m => m.QuestionPage)
   },
   {
