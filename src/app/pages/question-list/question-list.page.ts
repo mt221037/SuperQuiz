@@ -11,7 +11,7 @@ import { Question } from 'src/app/services/Question';
   templateUrl: './question-list.page.html',
   styleUrls: ['./question-list.page.scss'],
   standalone: true,
-  imports: [IonItemOptions, IonItemOption, IonItemSliding, IonLabel, IonItem, IonList, IonIcon, IonBackButton, IonButtons, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonInput]
+  imports: [IonItemOptions, IonItemOption, IonItemSliding, IonLabel, IonItem, IonList, IonIcon, IonBackButton, IonButtons, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class QuestionListPage implements OnInit {
   public data = inject(DataService);

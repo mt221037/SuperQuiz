@@ -1,0 +1,33 @@
+{
+  "id": "InitialQuiz",
+  "quizName": "Städtequiz",
+  "questions": [
+    {
+      "id": "ff3bf925-5589-4227-8edc-b31e6a0977b5",
+      "title": "Hauptstadt von Deutschland?",
+      "a1": "Berlin",
+      "a2": "Madrid",
+      "a3": "London",
+      "a4": "Paris",
+      "correct": 1
+    },
+    {
+      "id": "7eb8b59d-fca0-41b4-a18a-15a17ab224b0",
+      "title": "Hauptstadt von Frankreich?",
+      "a1": "Rom",
+      "a2": "Berlin",
+      "a3": "Amsterdam",
+      "a4": "Paris",
+      "correct": 4
+    },
+    {
+      "id": "e69cbe23-7b08-4789-8c4a-c984dceca56d",
+      "title": "Hauptstadt von Albanien?",
+      "a1": "Ankara",
+      "a2": "Tirana",
+      "a3": "Prag",
+      "a4": "Istanbul",
+      "correct": 2
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 import { add, addCircle, checkmark} from 'ionicons/icons';
 import { addIcons } from 'ionicons';
+
 addIcons({addCircle, checkmark});
 
 bootstrapApplication(AppComponent, {
