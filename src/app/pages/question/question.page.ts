@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonLabel, IonItem, IonList, IonBackButton, IonButtons } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonLabel, IonItem, IonList, IonBackButton, IonButtons, IonInput } from '@ionic/angular/standalone';
 import { DataService } from 'src/app/services/data.service';
 import { ActivatedRoute } from '@angular/router';
 import { Question } from 'src/app/services/Question';
@@ -11,7 +11,7 @@ import { Question } from 'src/app/services/Question';
   templateUrl: './question.page.html',
   styleUrls: ['./question.page.scss'],
   standalone: true,
-  imports: [IonButtons, IonBackButton, IonList, IonItem, IonLabel, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonInput, IonButtons, IonBackButton, IonList, IonItem, IonLabel, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class QuestionPage implements OnInit {
 
@@ -29,6 +29,7 @@ export class QuestionPage implements OnInit {
     this.question = this.data.getNewQuestion();
   else
   this.question = this.data.getQuestion(questionId) || this.data.getNewQuestion();
+console.log(this.question);
   }
 
 }

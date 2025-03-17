@@ -10,8 +10,26 @@
 <ion-content [fullscreen]="true">
   <ion-list>
     <ion-item>
-      <ion-label position="fixed">Fragen-ID:</ion-label>
+      <ion-label position="fixed">Fragen-ID: {{question.id}}</ion-label>
       <ion-label position="fixed"></ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Fragentext:" labelPlacement="fixed" type="text" [(ngModel)]="question.title"></ion-input>  <!-- ngModel ist ein double , hier bedeutet das also dass wenn die Frage bearbeitet wird ist das direkt in der Datenbank geänderet-->
+    </ion-item>
+    <ion-item>
+      <ion-input label="Antwort 1" labelPlacement="fixed" type="text" [(ngModel)]="question.a1"></ion-input>  <!-- ngModel ist ein double , hier bedeutet das also dass wenn die Frage bearbeitet wird ist das direkt in der Datenbank geänderet-->
+    </ion-item>
+    <ion-item>
+      <ion-input label="Antwort 2" labelPlacement="fixed" type="text" [(ngModel)]="question.a2"></ion-input>  <!-- ngModel ist ein double , hier bedeutet das also dass wenn die Frage bearbeitet wird ist das direkt in der Datenbank geänderet-->
+    </ion-item>
+    <ion-item>
+      <ion-input label="Antwort 3" labelPlacement="fixed" type="text" [(ngModel)]="question.a3"></ion-input>  <!-- ngModel ist ein double , hier bedeutet das also dass wenn die Frage bearbeitet wird ist das direkt in der Datenbank geänderet-->
+    </ion-item>
+    <ion-item>
+      <ion-input label="Antwort 4" labelPlacement="fixed" type="text" [(ngModel)]="question.a4"></ion-input>  <!-- ngModel ist ein double , hier bedeutet das also dass wenn die Frage bearbeitet wird ist das direkt in der Datenbank geänderet-->
+    </ion-item>
+    <ion-item>
+      <ion-input label="correct" labelPlacement="fixed" type="number" [(ngModel)]="question.correct"></ion-input>  <!-- ngModel ist ein double , hier bedeutet das also dass wenn die Frage bearbeitet wird ist das direkt in der Datenbank geänderet-->
     </ion-item>
   </ion-list>
 </ion-content>
