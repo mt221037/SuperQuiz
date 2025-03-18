@@ -21,7 +21,7 @@ export class DataService {
       correct: 3
     });*/
     this.loadQuiz();
-    console.log("Madrid");
+    console.log("Hallo3");
    }
 
    public getNewQuestion(): Question {
@@ -49,7 +49,7 @@ export class DataService {
   }*/
 
   public async loadQuiz() {
-    let q = await Preferences.get({ key: 'MichiSuperQuiz2025' });
+    let q = await Preferences.get({ key: 'SophieSuperQuiz2025' });
 
     console.log("Hallo1");
     try {
@@ -66,7 +66,7 @@ catch (e) {
 
   public saveQuiz() {
     Preferences.set({ 
-      key: 'MichiSuperQuiz2025',
+      key: 'SophieSuperQuiz2025',
       value: JSON.stringify(this.currentQuiz)
     });
   }
