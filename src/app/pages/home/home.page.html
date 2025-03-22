@@ -10,9 +10,9 @@
   <p class="question-count">
     Anzahl der Fragen: <br><strong class="count">{{ data.currentQuiz.questions.length }}</strong>
   </p>
-<ion-button shape="round" color="primary" (click)="showList()" expand="block" fill="outline">Fragen erstellen</ion-button>
-<ion-button shape="round" color="primary" expand="block" fill="outline" [routerLink]="['/quiz']">
-  Start Quiz
+<ion-button class="startknoepfe" shape="round" color="primary" (click)="showList()" expand="block" fill="outline">Fragen erstellen</ion-button>
+<ion-button class="startknoepfe" shape="round" color="primary" expand="block" fill="outline" [routerLink]="['/quiz']">
+  Quiz starten
 </ion-button>
 
 </ion-content>

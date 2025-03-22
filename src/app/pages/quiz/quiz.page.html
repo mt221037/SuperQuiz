@@ -11,7 +11,7 @@
   <div *ngIf="currentQuestionIndex < questions.length; else quizCompleted">
     <h2 class="quizFrage">{{ questions[currentQuestionIndex].title }}</h2>
     <div class="answers">
-      <ion-button
+      <ion-button class="answer"
         expand="block"
         fill="outline"
         *ngFor="let answer of [questions[currentQuestionIndex].a1, questions[currentQuestionIndex].a2, questions[currentQuestionIndex].a3, questions[currentQuestionIndex].a4]; let i = index"
@@ -24,7 +24,7 @@
   </div>
 
   <ng-template #quizCompleted>
-    <h2>Quiz beendet!</h2>
+    <h2 class="quizende">Quiz beendet!</h2>
     <p>Dein Ergebnis: {{ score }}/{{ questions.length }}</p>
     <ion-button expand="block" (click)="resetQuiz()">Quiz erneut starten</ion-button>
   </ng-template>
