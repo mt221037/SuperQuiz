@@ -1,6 +1,6 @@
 {
   "id": "InitialQuiz",
-  "quizName": "Städtequiz",
+  "quizName": "Städte- und Allgemeinwissenquiz",
   "questions": [
     {
       "id": "ff3bf925-5589-4227-8edc-b31e6a0977b5",
@@ -12,21 +12,84 @@
       "correct": 1
     },
     {
-      "id": "7eb8b59d-fca0-41b4-a18a-15a17ab224b0",
-      "title": "Hauptstadt von Frankreich?",
-      "a1": "Rom",
-      "a2": "Berlin",
-      "a3": "Amsterdam",
-      "a4": "Paris",
-      "correct": 4
+      "id": "f2e3d4c5-6789-0123-4567-891011121314",
+      "title": "Hauptstadt von Spanien?",
+      "a1": "Barcelona",
+      "a2": "Sevilla",
+      "a3": "Madrid",
+      "a4": "Valencia",
+      "correct": 3
     },
     {
-      "id": "e69cbe23-7b08-4789-8c4a-c984dceca56d",
-      "title": "Hauptstadt von Albanien?",
-      "a1": "Ankara",
-      "a2": "Tirana",
-      "a3": "Prag",
-      "a4": "Istanbul",
+      "id": "456def78-9101-1121-3141-516171819202",
+      "title": "Wie viele Kontinente gibt es auf der Erde?",
+      "a1": "5",
+      "a2": "6",
+      "a3": "7",
+      "a4": "8",
+      "correct": 3
+    },
+    {
+      "id": "789ghi90-2345-6789-0123-456789abcdef",
+      "title": "Wer malte die Mona Lisa?",
+      "a1": "Vincent van Gogh",
+      "a2": "Leonardo da Vinci",
+      "a3": "Pablo Picasso",
+      "a4": "Claude Monet",
+      "correct": 2
+    },
+    {
+      "id": "101jkl23-4567-8901-2345-6789abcdef01",
+      "title": "Wie viele Planeten hat unser Sonnensystem?",
+      "a1": "7",
+      "a2": "8",
+      "a3": "9",
+      "a4": "10",
+      "correct": 2
+    },
+    {
+      "id": "166yz789-0123-4567-8901-234abcdef456",
+      "title": "Welches ist das kleinste Land der Welt?",
+      "a1": "San Marino",
+      "a2": "Monaco",
+      "a3": "Vatikanstadt",
+      "a4": "Liechtenstein",
+      "correct": 3
+    },
+    {
+      "id": "bfe0d839-214c-45e5-a0f4-61f96a9c6b92",
+      "title": "Hauptstadt von Großbritannien?",
+      "a1": "London",
+      "a2": "Edinburgh",
+      "a3": "Cardiff",
+      "a4": "Belfast",
+      "correct": 1
+    },
+    {
+      "id": "c7205907-04f0-476a-b06d-3300e557b315",
+      "title": "Wer war der erste Mensch auf dem Mond?",
+      "a1": "Buzz Aldrin",
+      "a2": "Neil Armstrong",
+      "a3": "Yuri Gagarin",
+      "a4": "John Glenn",
+      "correct": 2
+    },
+    {
+      "id": "fce13f47-f9cf-4929-aed7-bbb49844ae6b",
+      "title": "Welcher Planet ist der Sonne am nächsten?",
+      "a1": "Venus",
+      "a2": "Mars",
+      "a3": "Merkur",
+      "a4": "Erde",
+      "correct": 3
+    },
+    {
+      "id": "ad46004d-fbc5-4557-948f-cfc464874b43",
+      "title": "Wie heißt der höchste Berg der Erde?",
+      "a1": "K2",
+      "a2": "Mount Everest",
+      "a3": "Kangchenjunga",
+      "a4": "Lhotse",
       "correct": 2
     }
   ]
