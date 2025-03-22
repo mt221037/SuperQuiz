@@ -29,7 +29,7 @@ export class DataService {
   }
 
   loadQuizFromJSON() {
-    this.http.get('https://www.schmiedl.co.at/json_cors/data.json').subscribe((data) => {
+    this.http.get('https://gist.githubusercontent.com/mt221037/18b97d826ad6eb4bdbd2563bb3cd374f/raw/613c1b69351fef582dae8024480e31217e425281/SophieSuperQuiz').subscribe((data) => {
       if (data && data.hasOwnProperty('quizName'))
         this.currentQuiz = data as Quiz;
       else

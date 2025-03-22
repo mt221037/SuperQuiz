@@ -1,13 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
     <ion-title>Quiz</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Quiz</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div *ngIf="currentQuestionIndex < questions.length; else quizCompleted">
+    <h2 class="quizFrage">{{ questions[currentQuestionIndex].title }}</h2>
+    <div class="answers">
+      <ion-button
+        expand="block"
+        fill="outline"
+        *ngFor="let answer of [questions[currentQuestionIndex].a1, questions[currentQuestionIndex].a2, questions[currentQuestionIndex].a3, questions[currentQuestionIndex].a4]; let i = index"
+        (click)="answerQuestion(i + 1)"
+        color="primary"
+      >
+        {{ answer }}
+      </ion-button>
+    </div>
+  </div>
+
+  <ng-template #quizCompleted>
+    <h2>Quiz beendet!</h2>
+    <p>Dein Ergebnis: {{ score }}/{{ questions.length }}</p>
+    <ion-button expand="block" (click)="resetQuiz()">Quiz erneut starten</ion-button>
+  </ng-template>
 </ion-content>

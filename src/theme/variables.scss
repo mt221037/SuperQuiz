@@ -1,2 +1,18 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root {
+    --ion-color-pink: #ff69b4; 
+    --ion-color-pink-rgb: 255, 105, 180;
+    --ion-color-pink-contrast: #ffffff;
+    --ion-color-pink-contrast-rgb: 255, 255, 255;
+    --ion-color-pink-shade: #e057a3;
+    --ion-color-pink-tint: #ff7fbf;
+  }
+  :root {
+    --ion-color-primary: var(--ion-color-pink); 
+    --ion-color-primary-rgb: var(--ion-color-pink-rgb);
+    --ion-color-primary-contrast: var(--ion-color-pink-contrast);
+    --ion-color-primary-contrast-rgb: var(--ion-color-pink-contrast-rgb);
+    --ion-color-primary-shade: var(--ion-color-pink-shade);
+    --ion-color-primary-tint: var(--ion-color-pink-tint);
+  }

@@ -7,6 +7,12 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<p>Anzahl der Fragen: {{data.currentQuiz.questions.length}}</p>
+  <p class="question-count">
+    Anzahl der Fragen: <br><strong class="count">{{ data.currentQuiz.questions.length }}</strong>
+  </p>
 <ion-button shape="round" color="primary" (click)="showList()" expand="block" fill="outline">Fragen erstellen</ion-button>
+<ion-button shape="round" color="primary" expand="block" fill="outline" [routerLink]="['/quiz']">
+  Start Quiz
+</ion-button>
+
 </ion-content>
